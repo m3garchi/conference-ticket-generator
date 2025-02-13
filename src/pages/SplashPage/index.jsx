@@ -15,8 +15,7 @@ const SplashPage = () => {
   return (
     <>
       <main className={"SplashPage"}>
-        <p className={"splashText"}>SPlash Page Design goes here.</p>
-        <p className={"splashText"}>Going to Home Page after 5 seconds.</p>
+      <img src="/Logo.svg" alt="Logo" className="rotatingLogo" />
       </main>
     </>
   );
