@@ -1,0 +1,15 @@
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, #02191d, #02191d),
+    radial-gradient(
+      52.52% 32.71% at 50% 97.66%,
+      rgba(36, 160, 181, 0.2) 0%,
+      rgba(36, 160, 181, 0) 100%
+    );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}

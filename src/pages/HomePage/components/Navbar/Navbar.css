@@ -1,0 +1,19 @@
+.navbar {
+  width: 100%;
+  padding: 0 10vw 0 10vw;
+  height: 96px;
+}
+
+.nav-container {
+  width: 100%;
+  border: 1px solid #197686;
+  border-radius: 24px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.one-name {
+  color: #ffffff;
+}
