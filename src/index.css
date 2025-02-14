@@ -1,7 +1,5 @@
-/* add Pathway font */
-@import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,100;0,300;0,400;0,600;0,800;0,900;1,200;1,300;1,900&display=swap");
-/* add Tinos font */
-@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* add all fonts */
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto:wght@400;500;700&family=Jeju+Myeongjo&display=swap');
 
 :root {
   font-family: "Pathway Extreme", sans-serif;
@@ -22,6 +20,13 @@
   /* overflow: hidden; */
 }
 
+html,
+body {
+  height: 100%;
+  background: linear-gradient(0deg, #02191d, #02191d),
+    radial-gradient(52.52% 32.71% at 50% 97.66%, #24a0b533 0%, #24a0b500 100%);
+}
+
 /* width and height of the scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -29,17 +34,17 @@
 
 /* background of the scrollbar */
 ::-webkit-scrollbar-track {
-  background: var(--scrollbar-track-color);
+  background: #518088;
 }
 
 /* color of the scrollbar handle */
 ::-webkit-scrollbar-thumb {
-  background: #0a4aaa;
+  background: #295158;
   border-radius: 9px;
 }
 
 /* color of the scrollbar handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #3965a7;
+  background: #1c3a3f;
   cursor: pointer;
 }

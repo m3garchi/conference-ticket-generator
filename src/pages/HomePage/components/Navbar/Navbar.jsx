@@ -14,7 +14,8 @@ const Navbar = () => {
             <a href="/my-tickets">My Tickets</a>
             <a href="/about">About Project</a>
           </div>
-            <a href="/my-tickets" className="my-tickets-btn">
+        
+          <a href="/my-tickets" className="my-tickets-btn">
             MY TICKETS →
           </a>
         </div>

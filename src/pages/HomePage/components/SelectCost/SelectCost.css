@@ -1,11 +1,179 @@
 .select-cost {
   width: 100%;
-  height: calc(100vh - 96px);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.event-card {
+  border: 1px solid #07373F;
+  border-radius: 8px;
+  width: 556px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at center, 
+  rgba(36, 160, 181, 0.2) 0%,
+  rgba(36, 160, 181, 0) 100% );
+  background-color: #0A0C11 0.1; 
+}
+
+.event-title {
+  color: #FAFAFA;
+  font-family: 'Road Rage', serif;
+  font-size: 62px;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+.event-details {
+  color: #FAFAFA;
+  font-family: 'roboto', serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+.horizontal-line {
+  width: 100%; /* Full width */
+  height: 2px; /* Line thickness */
+  background-color: #07373F; /* Line color */
+  margin: 32px 0; /* Add spacing */
+}
+
+.select-ticket{
+  color: #FAFAFA;
+  font-family: 'roboto', serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+.ticket-types {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+  border: 1px solid #07373F;
+  border-radius: 8px;
+  width: 556px;
+  height: 142px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  background: #052228
+}
+
+/* Ticket Card Styles */
+.ticket-card {
+  position: relative;
+  width: 158px;
+  padding: 12px;
+  background-color: none;
+  border: 2px solid #197686;
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+.ticket-card:hover {
+  transform: scale(1.1);
+  background-color: #197686;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.card-content{
+  color: #ffffff;
+}
+.ticket-card .card-content p {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.card-radio {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.ticket-card input:checked + .card-content {
+  border-color: #197686;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  transition: all 0.3s ease;
+}
+
+.ticket-quantity-section {
+  margin-top: 32px;
+}
+
+
+.ticket-quantity-select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #07373F;
+  border-radius: 12px;
+  width: 556px;
+  padding: 12px;
+  background: none;
+  color: #FFFFFF;
+}
+
+.ticket-quantity-select:focus {
+  outline: none;
+  border-color: #24A0B5;
+  box-shadow: 0 0 4px rgba(36, 160, 181, 0.5);
+}
+
+.ticket-quantity-select option {
+  background-color: #08252B;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top:32px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  gap:16px;
+  
+}
+
+.button-outline {
+  width: 266px; /* Fixed width */
+  height: 48px; /* Fixed height */
+  background: transparent;
+  color: #24A0B5;
+  border: 1px solid #24A0B5;
+  border-radius: 8px;
+}
+
+.button-outline:hover {
+  border-color: #26c6da;
+}
+
+.button-fill {
+  width: 266px; /* Fixed width */
+  height: 48px; /* Fixed height */
+  background-color: #26c6da;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+.button-fill:hover {
+  background-color: #2dd3e6;
 }
 
 .text-info {

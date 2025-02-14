@@ -11,8 +11,7 @@ const TicketReady = () => {
 
         <button
           onClick={() => {
-            setSearchParams;
-            ({
+            setSearchParams({
               step: "1",
             });
           }}

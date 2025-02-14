@@ -6,7 +6,7 @@
 }
 
 .nav-container {
-  width: 1200px;
+  width: 100%;
   border: 1px solid #197686;
   border-radius: 24px;
   height: 76px;
@@ -55,4 +55,23 @@
 .my-tickets-btn:hover {
   background-color: rgba(255, 255, 255, 0.9);
   transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    padding: 0 3vw 0 3vw;
+    height: 78px;
+  }
+  
+  .nav-container {
+    border-radius: 12px;
+    height: 68px;
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
 }
