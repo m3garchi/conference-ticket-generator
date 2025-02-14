@@ -8,14 +8,14 @@ const Navbar = () => {
           <a href="/" className="logo">
             <img src="/Navlogo.svg" alt="NavLogo" className="navbar-logo" />
           </a>
-        
+
           <div className="nav-links">
-            <a href="/events">Events</a>
-            <a href="/my-tickets">My Tickets</a>
-            <a href="/about">About Project</a>
+            <a href="#">Events</a>
+            <a href="#">My Tickets</a>
+            <a href="#">About Project</a>
           </div>
-        
-          <a href="/my-tickets" className="my-tickets-btn">
+
+          <a href="#" className="my-tickets-btn">
             MY TICKETS →
           </a>
         </div>

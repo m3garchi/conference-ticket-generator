@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 //pages
-import { SplashPage, HomePage } from "./pages";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   const location = useLocation();
@@ -8,9 +8,7 @@ const App = () => {
   return (
     <>
       <Routes location={location} key={location.pathname}>
-        <Route path={"/"} element={<SplashPage />} />
-
-        <Route path={"/home"} element={<HomePage />} />
+        <Route path={"/"} element={<HomePage />} />
       </Routes>
     </>
   );

@@ -11,15 +11,20 @@ const AttendeeDetails = () => {
           Showing Attendee Details form and other things now
         </p>
 
-        <button
-          onClick={() => {
-            setSearchParams({
-              step: "3",
-            });
-          }}
-        >
-          Get my Free Ticket
-        </button>
+        <div className="button-group">
+          <button
+            className="button-outline"
+            onClick={() => {
+              setSearchParams({
+                step: "1",
+              });
+            }}
+          >
+            Back
+          </button>
+
+          <button className="button-fill">Get My Free Ticket</button>
+        </div>
       </div>
     </>
   );

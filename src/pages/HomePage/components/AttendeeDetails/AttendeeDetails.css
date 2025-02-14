@@ -1,13 +1,84 @@
 .attendee-details {
   width: 100%;
-  height: calc(100vh - 96px);
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  min-height: 375px;
 }
 
 .text-info {
   color: white;
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.button-outline {
+  border: 1px solid #24a0b5;
+  width: 50%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #24a0b5;
+  font-family: JejuMyeongjo;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-outline:hover {
+  background-color: #54ddf5;
+}
+
+.button-fill {
+  border: none;
+  width: 50%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: JejuMyeongjo;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  background-color: #24a0b5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-fill:hover {
+  background-color: #54ddf5;
+}
+
+@media (max-width: 600px) {
+  .attendee-details {
+    padding: 16px 24px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-outline {
+    width: 100%;
+  }
+
+  .button-fill {
+    width: 100%;
+  }
 }
