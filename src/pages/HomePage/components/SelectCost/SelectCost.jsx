@@ -106,13 +106,18 @@ const SelectCost = () => {
             {error && <p className="select-ticket-label-text-error">{error}</p>}
           </div>
 
-          <input
-            type="text"
+          <select
             name="numberOfTicket"
             className="ticket-count-input"
             value={numberOfTickets}
             onChange={handleInputChange}
-          />
+          >
+          {[...Array (5) .keys()] .map ((num) => (
+            <option key={num + 1} value ={num + 1}>
+              {num + 1}
+            </option>
+          ))}
+          </select>
         </div>
 
         {/* buttons */}
