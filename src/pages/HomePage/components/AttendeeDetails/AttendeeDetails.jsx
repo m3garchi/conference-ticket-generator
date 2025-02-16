@@ -9,7 +9,7 @@ const AttendeeDetails = () => {
   const [formData, setFormData] = useState({
     profileImage: "",
     name: "",
-    email: "",
+    email: "", // Pre-filled email
     specialRequest: "",
     
   });
