@@ -76,11 +76,28 @@
   font-weight: 400;
 }
 
+/* Image Preview Container */
+.preview-container {
+  text-align: center;
+  width: 100%;
+  max-width: 150px; /* Adjust as needed */
+}
+
+/* Preview Image */
 .preview-image {
-  max-width: 100%;
-  max-height: 150px;
-  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+  border: 2px solid #e0e0e0; 
   object-fit: cover;
+}
+
+/* Preview Text */
+.preview-text {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #938c8c; 
+  font-style: italic;
 }
 
 /* Form Group */
@@ -193,9 +210,11 @@
 
   .button-outline {
     width: 100%;
+    order: 2;
   }
 
   .button-fill {
     width: 100%;
+    order: 1;
   }
 }

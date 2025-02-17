@@ -9,9 +9,8 @@ const AttendeeDetails = () => {
   const [formData, setFormData] = useState({
     profileImage: "",
     name: "",
-    email: "", // Pre-filled email
+    email: "",
     specialRequest: "",
-    
   });
 
   // State to manage errors
@@ -73,7 +72,6 @@ const AttendeeDetails = () => {
   return (
     <div className="attendee-details">
       <div className="form-container">
-
         {/* Image Upload Section */}
         <div className="image-upload">
           <p className="upload-label">Upload Profile Photo</p>
@@ -81,10 +79,21 @@ const AttendeeDetails = () => {
             className="upload-area"
             onClick={() => document.getElementById("imageInput").click()}
           >
-            <div className="upload-box">
-              <img src="/download.svg" alt="UploadIcon" className="upload-icon" />
-              <p className="upload-text">Drag & drop or click to upload</p>
-            </div>
+            {formData.profileImage ? (
+              <div className="preview-container">
+                <img
+                  src={formData.profileImage}
+                  alt="Profile Preview"
+                  className="preview-image"
+                />
+                <p className="preview-text">Click to change image</p>
+              </div>
+            ) : (
+              <div className="upload-box">
+                <img src="/download.svg" alt="UploadIcon" className="upload-icon" />
+                <p className="upload-text">Drag & drop or click to upload</p>
+              </div>
+            )}
             <input
               type="file"
               id="imageInput"
@@ -130,7 +139,6 @@ const AttendeeDetails = () => {
             placeholder="messi@example.com"
             style={{ color: "#ffffff" }}
           />
-        
           {errors.email && <p className="error-message">{errors.email}</p>}
         </div>
 
@@ -163,7 +171,7 @@ const AttendeeDetails = () => {
         </button>
 
         <button className="button-fill" onClick={handleSubmit}>
-          Get My Free Ticket
+          Get My Ticket
         </button>
       </div>
     </div>

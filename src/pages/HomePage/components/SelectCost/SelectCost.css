@@ -230,11 +230,14 @@
     flex-direction: column;
   }
 
-  .button-outline {
-    width: 100%;
-  }
-
   .button-fill {
     width: 100%;
+    order: 2;
   }
+
+  .button-outline {
+    width: 100%;
+    order: 1;
+  }
+ 
 }
